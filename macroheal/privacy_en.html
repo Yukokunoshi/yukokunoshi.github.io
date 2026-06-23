@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · MacroHeal</title>
+<style>
+:root{--bg:#0D0B08;--surf:#1C1915;--text:#F0E4C8;--accent:#E8924A;--muted:#A89677}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+.wrap{max-width:760px;margin:0 auto;padding:48px 24px}
+.lang{text-align:right;margin-bottom:24px}
+.lang a{color:var(--accent);text-decoration:none;font-size:14px;padding:8px 16px;border:1px solid var(--accent);border-radius:8px}
+h1{font-size:36px;margin:0 0 8px}
+h2{color:var(--accent);margin-top:40px;font-size:22px}
+h3{color:var(--text);margin-top:24px;font-size:18px}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}
+th,td{padding:10px;border:1px solid rgba(255,255,255,.1);text-align:left;vertical-align:top}
+th{background:var(--surf);color:var(--accent)}
+a{color:var(--accent)}
+.meta{color:var(--muted);font-size:14px;margin-bottom:32px}
+.note{background:var(--surf);padding:16px;border-radius:12px;border-left:4px solid var(--accent);margin:24px 0}
+ul{padding-left:20px}
+footer{text-align:center;padding:40px 0;color:var(--muted);font-size:13px;border-top:1px solid rgba(255,255,255,.05);margin-top:60px}
+footer a{color:var(--accent);text-decoration:none;margin:0 8px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="lang"><a href="privacy.html">🇹🇷 Türkçe</a></div>
+
+<h1>Privacy Policy</h1>
+<p class="meta">Last updated: June 23, 2026 · Effective: June 23, 2026</p>
+
+<p>This Privacy Policy describes how the MacroHeal mobile application ("App") collects, processes, and stores data from its users. The App is developed and operated by <strong>Yukokunoshi</strong>.</p>
+
+<h2>1. Data We Collect</h2>
+
+<h3>1.1. Data You Provide</h3>
+<table>
+<tr><th>Data</th><th>Purpose</th><th>Storage</th></tr>
+<tr><td>Email, password</td><td>Account, authentication</td><td>Firebase Auth</td></tr>
+<tr><td>Username, country, age, gender, height, weight</td><td>Calorie/macro calculation</td><td>Device + Firebase</td></tr>
+<tr><td>Target weight, activity level</td><td>Goal setting</td><td>Device + Firebase</td></tr>
+<tr><td>Food logs, water, macros</td><td>Daily tracking</td><td>Device (SQLite) + Firebase</td></tr>
+<tr><td>Weight history</td><td>Weight chart</td><td>Device</td></tr>
+<tr><td>Profile photo (optional)</td><td>Display</td><td>Device</td></tr>
+</table>
+
+<h3>1.2. Automatically Collected</h3>
+<ul>
+<li>Device type, OS version (Crashlytics, 90 days)</li>
+<li>Anonymous in-app events (Firebase Analytics, 14 months)</li>
+<li>Crash reports (Crashlytics, 90 days)</li>
+</ul>
+
+<h3>1.3. Permission-Based</h3>
+<ul>
+<li><strong>Camera</strong> — food photos / barcode</li>
+<li><strong>Gallery</strong> — uploading photos</li>
+<li><strong>Notifications</strong> — reminders</li>
+<li><strong>Health Connect (Android) / HealthKit (iOS)</strong> — steps, calories, weight (optional)</li>
+<li><strong>Microphone</strong> — voice search (during recording only)</li>
+</ul>
+
+<h2>2. Third-Party Services</h2>
+<table>
+<tr><th>Service</th><th>Data</th><th>Purpose</th></tr>
+<tr><td>Firebase (Google)</td><td>Identity, profile, logs</td><td>Auth + Cloud</td></tr>
+<tr><td>Anthropic Claude API</td><td>Food photo</td><td>AI analysis (not stored)</td></tr>
+<tr><td>USDA FoodData Central</td><td>Food search queries</td><td>Nutrition DB</td></tr>
+<tr><td>Open Food Facts</td><td>Barcode queries</td><td>Product info</td></tr>
+<tr><td>Resend</td><td>Email</td><td>OTP verification</td></tr>
+<tr><td>RevenueCat</td><td>Anonymous device ID, purchases</td><td>Subscription</td></tr>
+<tr><td>Google Sign-In</td><td>Email, name</td><td>Social login (optional)</td></tr>
+<tr><td>Apple Sign-In (iOS)</td><td>Anonymous email, name</td><td>Social login (optional)</td></tr>
+</table>
+
+<div class="note"><strong>Important:</strong> Food photos sent to Claude API are not stored for model training. They are deleted after the result is returned.</div>
+
+<h2>3. Use Purposes</h2>
+<ul>
+<li>Account creation and authentication</li>
+<li>Personalized calorie/macro goals</li>
+<li>Tracking nutritional habits</li>
+<li>AI food analysis</li>
+<li>Diagnosing crashes/performance</li>
+<li>Premium subscription management</li>
+<li>Legal compliance</li>
+</ul>
+<p><strong>We never sell, rent, or share your data for advertising.</strong></p>
+
+<h2>4. Security</h2>
+<ul>
+<li>Data encrypted with AES-256 on Firebase</li>
+<li>Local data in device's secure storage</li>
+<li>Passwords hashed with bcrypt</li>
+<li>All server traffic over TLS 1.2+</li>
+</ul>
+
+<h2>5. Retention</h2>
+<ul>
+<li><strong>Active account:</strong> Retained while active</li>
+<li><strong>Inactive account:</strong> Anonymized after 24 months of inactivity</li>
+<li><strong>Account deletion:</strong> Permanently deleted within 30 days of request</li>
+</ul>
+
+<h2>6. Your Rights (GDPR)</h2>
+<ul>
+<li>Know if your data is processed</li>
+<li>Access your data (request a copy)</li>
+<li>Rectify inaccurate data</li>
+<li>Erasure (right to be forgotten)</li>
+<li>Restrict processing</li>
+<li>Data portability</li>
+<li>Object to automated decision-making</li>
+</ul>
+<p>In-app: <strong>Profile → Delete Account</strong> · Other requests: <a href="mailto:privacy@macroheal.app">privacy@macroheal.app</a></p>
+
+<h2>7. Children</h2>
+<p>Not designed for users under 13 years old.</p>
+
+<h2>8. International Transfers</h2>
+<p>Data may be stored on Google Cloud servers (EU or US). For EU users, Standard Contractual Clauses (SCC) apply.</p>
+
+<h2>9. Changes</h2>
+<p>Significant changes will be announced via in-app notification.</p>
+
+<h2>10. Contact</h2>
+<p><strong>Yukokunoshi</strong><br>
+Email: <a href="mailto:privacy@macroheal.app">privacy@macroheal.app</a></p>
+
+</div>
+<footer>
+  <a href="/">Home</a> · <a href="terms_en.html">Terms</a> · <a href="delete-account_en.html">Delete Account</a>
+</footer>
+</body>
+</html>
